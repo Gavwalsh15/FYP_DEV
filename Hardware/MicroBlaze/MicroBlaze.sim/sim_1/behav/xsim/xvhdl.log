@@ -1,0 +1,20 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.ip_user_files/bd/MB/ip/MB_rst_clk_wiz_0_100M_0/sim/MB_rst_clk_wiz_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MB_rst_clk_wiz_0_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_uartlite_0_0/sim/MB_axi_uartlite_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MB_axi_uartlite_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_bram_ctrl_0_1/sim/MB_axi_bram_ctrl_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MB_axi_bram_ctrl_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.ip_user_files/bd/MB/ip/MB_microblaze_0_5/sim/MB_microblaze_0_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MB_microblaze_0_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.ip_user_files/bd/MB/ip/MB_dlmb_v10_7/sim/MB_dlmb_v10_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MB_dlmb_v10_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.ip_user_files/bd/MB/ip/MB_ilmb_v10_7/sim/MB_ilmb_v10_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MB_ilmb_v10_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.ip_user_files/bd/MB/ip/MB_dlmb_bram_if_cntlr_7/sim/MB_dlmb_bram_if_cntlr_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MB_dlmb_bram_if_cntlr_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.ip_user_files/bd/MB/ip/MB_ilmb_bram_if_cntlr_7/sim/MB_ilmb_bram_if_cntlr_7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MB_ilmb_bram_if_cntlr_7'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.ip_user_files/bd/MB/ip/MB_mdm_1_5/sim/MB_mdm_1_5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MB_mdm_1_5'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_1/sim/bd_0186_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_0186_psr_aclk_0'

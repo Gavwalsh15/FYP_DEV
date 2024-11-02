@@ -1,0 +1,29 @@
+#include "xparameters.h"
+#include <xil_printf.h>
+#include <stdio.h>
+#include "xil_exception.h"
+#include "xuartlite.h"
+
+#define UART_DEVICE_ID  XPAR_UARTLITE_0_DEVICE_ID // Replace with your specific UART device ID
+
+XUartLite UartLite;   /* The instance of the UART Lite Device */
+
+int main(void) {
+    int Status;
+    u8 ReceivedChar;
+
+    // Initialize the UARTLite driver
+    Status = XUartLite_Initialize(&UartLite, UART_DEVICE_ID);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    // Receive a single character
+    ReceivedChar = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+
+    // Now the ReceivedChar contains the received character
+    // You can process the character as needed
+    xil_printf("Received character: %c\n", ReceivedChar);
+
+    return 0;
+}

@@ -1,0 +1,68 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/3242" --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/f0b6/hdl/verilog" --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/c783/hdl/verilog" --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../MicroBlaze.srcs/sources_1/new/CRC32.v" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_clk_wiz_0_0/MB_clk_wiz_0_0_clk_wiz.v" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_clk_wiz_0_0/MB_clk_wiz_0_0.v" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_bram_ctrl_0_bram_1/sim/MB_axi_bram_ctrl_0_bram_1.v" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_lmb_bram_7/sim/MB_lmb_bram_7.v" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/sim/bd_0186.v" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_0/sim/bd_0186_one_0.v" \
+
+sv xil_defaultlib  --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/3242" --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/f0b6/hdl/verilog" --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/c783/hdl/verilog" --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_2/sim/bd_0186_arinsw_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_3/sim/bd_0186_rinsw_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_4/sim/bd_0186_awinsw_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_5/sim/bd_0186_winsw_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_6/sim/bd_0186_binsw_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_7/sim/bd_0186_aroutsw_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_8/sim/bd_0186_routsw_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_9/sim/bd_0186_awoutsw_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_10/sim/bd_0186_woutsw_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_11/sim/bd_0186_boutsw_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_12/sim/bd_0186_arni_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_13/sim/bd_0186_rni_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_14/sim/bd_0186_awni_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_15/sim/bd_0186_wni_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_16/sim/bd_0186_bni_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_17/sim/bd_0186_s00mmu_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_18/sim/bd_0186_s00tr_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_19/sim/bd_0186_s00sic_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_20/sim/bd_0186_s00a2s_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_21/sim/bd_0186_sarn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_22/sim/bd_0186_srn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_23/sim/bd_0186_sawn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_24/sim/bd_0186_swn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_25/sim/bd_0186_sbn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_26/sim/bd_0186_s01mmu_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_27/sim/bd_0186_s01tr_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_28/sim/bd_0186_s01sic_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_29/sim/bd_0186_s01a2s_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_30/sim/bd_0186_sawn_1.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_31/sim/bd_0186_swn_1.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_32/sim/bd_0186_sbn_1.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_33/sim/bd_0186_m00s2a_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_34/sim/bd_0186_m00arn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_35/sim/bd_0186_m00rn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_36/sim/bd_0186_m00awn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_37/sim/bd_0186_m00wn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_38/sim/bd_0186_m00bn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_39/sim/bd_0186_m00e_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_40/sim/bd_0186_m01s2a_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_41/sim/bd_0186_m01arn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_42/sim/bd_0186_m01rn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_43/sim/bd_0186_m01awn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_44/sim/bd_0186_m01wn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_45/sim/bd_0186_m01bn_0.sv" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/bd_0/ip/ip_46/sim/bd_0186_m01e_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/3242" --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/f0b6/hdl/verilog" --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/c783/hdl/verilog" --include "../../../../MicroBlaze.gen/sources_1/bd/MB/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_axi_smc_2/sim/MB_axi_smc_2.v" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/ip/MB_hello_world_writer_0_4/sim/MB_hello_world_writer_0_4.v" \
+"../../../../MicroBlaze.ip_user_files/bd/MB/sim/MB.v" \
+"../../../../MicroBlaze.gen/sources_1/bd/MB/hdl/MB_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,34 @@
+#include "xuartlite.h"
+#include "xparameters.h"
+#include "sleep.h"
+
+#define UART_DEVICE_ID XPAR_UARTLITE_0_DEVICE_ID
+
+XUartLite UartLite;  // UART Lite instance
+u8 SendChar = 'A';   // Character to send
+u8 ReceivedChar;     // Variable to store the received character
+
+int main() {
+    int Status;
+
+
+    Status = XUartLite_Initialize(&UartLite, UART_DEVICE_ID);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    while (1) {
+        // Send a single character
+        XUartLite_Send(&UartLite, &SendChar, 1);
+
+        // Wait for the character to be received
+        while (XUartLite_Recv(&UartLite, &ReceivedChar, 1) != 1);
+        print("Here");
+
+
+        // Add a small delay if necessary to avoid flooding the UART
+        sleep(1);
+    }
+
+    return 0;
+}

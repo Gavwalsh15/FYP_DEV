@@ -1,0 +1,13 @@
+#include "xuartlite.h"
+
+int main() {
+
+    while (1) {
+        printf("Hello world");
+
+
+    }
+
+    cleanup_platform();
+    return 0;
+}

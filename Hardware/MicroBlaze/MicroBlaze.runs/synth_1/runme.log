@@ -1,0 +1,346 @@
+
+*** Running vivado
+    with args -log MB_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MB_wrapper.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Oct 31 15:04:01 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source MB_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 538.953 ; gain = 236.988
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.srcs/utils_1/imports/synth_1/MB_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.srcs/utils_1/imports/synth_1/MB_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MB_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25692
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1450.273 ; gain = 448.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MB_wrapper' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/hdl/MB_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'MB' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:13]
+INFO: [Synth 8-6157] synthesizing module 'MB_axi_bram_ctrl_0_1' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_axi_bram_ctrl_0_1' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_axi_bram_ctrl_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MB_axi_bram_ctrl_0_bram_1' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_axi_bram_ctrl_0_bram_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_axi_bram_ctrl_0_bram_1' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_axi_bram_ctrl_0_bram_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'doutb' of module 'MB_axi_bram_ctrl_0_bram_1' is unconnected for instance 'axi_bram_ctrl_0_bram' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:194]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'MB_axi_bram_ctrl_0_bram_1' is unconnected for instance 'axi_bram_ctrl_0_bram' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:194]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'MB_axi_bram_ctrl_0_bram_1' is unconnected for instance 'axi_bram_ctrl_0_bram' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:194]
+WARNING: [Synth 8-7023] instance 'axi_bram_ctrl_0_bram' of module 'MB_axi_bram_ctrl_0_bram_1' has 16 connections declared, but only 13 given [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:194]
+INFO: [Synth 8-6157] synthesizing module 'MB_axi_smc_2' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_axi_smc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_axi_smc_2' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_axi_smc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'MB_axi_smc_2' is unconnected for instance 'axi_smc' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:208]
+WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'MB_axi_smc_2' is unconnected for instance 'axi_smc' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:208]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'MB_axi_smc_2' is unconnected for instance 'axi_smc' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:208]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'MB_axi_smc_2' is unconnected for instance 'axi_smc' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:208]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'MB_axi_smc_2' has 84 connections declared, but only 80 given [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:208]
+INFO: [Synth 8-6157] synthesizing module 'MB_axi_uartlite_0_0' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_axi_uartlite_0_0' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'MB_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:289]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'MB_axi_uartlite_0_0' has 22 connections declared, but only 21 given [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:289]
+INFO: [Synth 8-6157] synthesizing module 'MB_clk_wiz_0_0' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_clk_wiz_0_0' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_clk_wiz_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'clk_out2' of module 'MB_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:311]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'MB_clk_wiz_0_0' has 5 connections declared, but only 4 given [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:311]
+INFO: [Synth 8-6157] synthesizing module 'MB_hello_world_writer_0_4' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_hello_world_writer_0_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_hello_world_writer_0_4' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_hello_world_writer_0_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MB_mdm_1_5' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_mdm_1_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_mdm_1_5' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_mdm_1_5_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MB_microblaze_0_5' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_microblaze_0_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_microblaze_0_5' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_microblaze_0_5_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'MB_microblaze_0_5' is unconnected for instance 'microblaze_0' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:342]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'MB_microblaze_0_5' has 52 connections declared, but only 51 given [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:342]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_BO03LH' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:427]
+INFO: [Synth 8-6157] synthesizing module 'MB_dlmb_bram_if_cntlr_7' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_dlmb_bram_if_cntlr_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_dlmb_bram_if_cntlr_7' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_dlmb_bram_if_cntlr_7_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MB_dlmb_v10_7' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_dlmb_v10_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_dlmb_v10_7' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_dlmb_v10_7_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'MB_dlmb_v10_7' is unconnected for instance 'dlmb_v10' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:573]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'MB_dlmb_v10_7' has 25 connections declared, but only 24 given [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:573]
+INFO: [Synth 8-6157] synthesizing module 'MB_ilmb_bram_if_cntlr_7' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_ilmb_bram_if_cntlr_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_ilmb_bram_if_cntlr_7' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_ilmb_bram_if_cntlr_7_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MB_ilmb_v10_7' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_ilmb_v10_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_ilmb_v10_7' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_ilmb_v10_7_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'MB_ilmb_v10_7' is unconnected for instance 'ilmb_v10' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:619]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'MB_ilmb_v10_7' has 25 connections declared, but only 24 given [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:619]
+INFO: [Synth 8-6157] synthesizing module 'MB_lmb_bram_7' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_lmb_bram_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_lmb_bram_7' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_lmb_bram_7_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'MB_lmb_bram_7' is unconnected for instance 'lmb_bram' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:644]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'MB_lmb_bram_7' is unconnected for instance 'lmb_bram' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:644]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'MB_lmb_bram_7' has 16 connections declared, but only 14 given [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:644]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_BO03LH' (0#1) [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:427]
+INFO: [Synth 8-6157] synthesizing module 'MB_rst_clk_wiz_0_100M_0' [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MB_rst_clk_wiz_0_100M_0' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/.Xil/Vivado-12568-DESKTOP-VANOK20/realtime/MB_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'MB_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:416]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'MB_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:416]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'MB_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 8 given [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:416]
+INFO: [Synth 8-6155] done synthesizing module 'MB' (0#1) [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/synth/MB.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'MB_wrapper' (0#1) [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/hdl/MB_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1567.477 ; gain = 566.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1567.477 ; gain = 566.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1567.477 ; gain = 566.059
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1567.477 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_clk_wiz_0_0/MB_clk_wiz_0_0/MB_clk_wiz_0_0_in_context.xdc] for cell 'MB_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_clk_wiz_0_0/MB_clk_wiz_0_0/MB_clk_wiz_0_0_in_context.xdc] for cell 'MB_i/clk_wiz_0'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_rst_clk_wiz_0_100M_0/MB_rst_clk_wiz_0_100M_0/MB_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'MB_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_rst_clk_wiz_0_100M_0/MB_rst_clk_wiz_0_100M_0/MB_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'MB_i/rst_clk_wiz_0_100M'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_axi_uartlite_0_0/MB_axi_uartlite_0_0/MB_axi_uartlite_0_0_in_context.xdc] for cell 'MB_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_axi_uartlite_0_0/MB_axi_uartlite_0_0/MB_axi_uartlite_0_0_in_context.xdc] for cell 'MB_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_axi_bram_ctrl_0_1/MB_axi_bram_ctrl_0_1/MB_axi_bram_ctrl_0_1_in_context.xdc] for cell 'MB_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_axi_bram_ctrl_0_1/MB_axi_bram_ctrl_0_1/MB_axi_bram_ctrl_0_1_in_context.xdc] for cell 'MB_i/axi_bram_ctrl_0'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_axi_bram_ctrl_0_bram_1/MB_axi_bram_ctrl_0_bram_1/MB_axi_bram_ctrl_0_bram_1_in_context.xdc] for cell 'MB_i/axi_bram_ctrl_0_bram'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_axi_bram_ctrl_0_bram_1/MB_axi_bram_ctrl_0_bram_1/MB_axi_bram_ctrl_0_bram_1_in_context.xdc] for cell 'MB_i/axi_bram_ctrl_0_bram'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_microblaze_0_5/MB_microblaze_0_5/MB_microblaze_0_0_in_context.xdc] for cell 'MB_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_microblaze_0_5/MB_microblaze_0_5/MB_microblaze_0_0_in_context.xdc] for cell 'MB_i/microblaze_0'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_dlmb_v10_7/MB_dlmb_v10_7/MB_ilmb_v10_0_in_context.xdc] for cell 'MB_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_dlmb_v10_7/MB_dlmb_v10_7/MB_ilmb_v10_0_in_context.xdc] for cell 'MB_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_ilmb_v10_7/MB_ilmb_v10_7/MB_ilmb_v10_0_in_context.xdc] for cell 'MB_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_ilmb_v10_7/MB_ilmb_v10_7/MB_ilmb_v10_0_in_context.xdc] for cell 'MB_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_dlmb_bram_if_cntlr_7/MB_dlmb_bram_if_cntlr_7/MB_dlmb_bram_if_cntlr_3_in_context.xdc] for cell 'MB_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_dlmb_bram_if_cntlr_7/MB_dlmb_bram_if_cntlr_7/MB_dlmb_bram_if_cntlr_3_in_context.xdc] for cell 'MB_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_ilmb_bram_if_cntlr_7/MB_ilmb_bram_if_cntlr_7/MB_ilmb_bram_if_cntlr_3_in_context.xdc] for cell 'MB_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_ilmb_bram_if_cntlr_7/MB_ilmb_bram_if_cntlr_7/MB_ilmb_bram_if_cntlr_3_in_context.xdc] for cell 'MB_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_lmb_bram_7/MB_lmb_bram_7/MB_lmb_bram_7_in_context.xdc] for cell 'MB_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_lmb_bram_7/MB_lmb_bram_7/MB_lmb_bram_7_in_context.xdc] for cell 'MB_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_mdm_1_5/MB_mdm_1_5/MB_mdm_1_0_in_context.xdc] for cell 'MB_i/mdm_1'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_mdm_1_5/MB_mdm_1_5/MB_mdm_1_0_in_context.xdc] for cell 'MB_i/mdm_1'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_axi_smc_2/MB_axi_smc_2/MB_axi_smc_2_in_context.xdc] for cell 'MB_i/axi_smc'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_axi_smc_2/MB_axi_smc_2/MB_axi_smc_2_in_context.xdc] for cell 'MB_i/axi_smc'
+Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_hello_world_writer_0_4/MB_hello_world_writer_0_4/MB_hello_world_writer_0_4_in_context.xdc] for cell 'MB_i/hello_world_writer_0'
+Finished Parsing XDC File [c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_hello_world_writer_0_4/MB_hello_world_writer_0_4/MB_hello_world_writer_0_4_in_context.xdc] for cell 'MB_i/hello_world_writer_0'
+Parsing XDC File [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1590.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1590.984 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MB_i/axi_bram_ctrl_0_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'MB_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_clk_wiz_0_0/MB_clk_wiz_0_0/MB_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.gen/sources_1/bd/MB/ip/MB_clk_wiz_0_0/MB_clk_wiz_0_0/MB_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/axi_bram_ctrl_0_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for MB_i/hello_world_writer_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------+----------+
+|      |BlackBox name             |Instances |
++------+--------------------------+----------+
+|1     |MB_axi_bram_ctrl_0_1      |         1|
+|2     |MB_axi_bram_ctrl_0_bram_1 |         1|
+|3     |MB_axi_smc_2              |         1|
+|4     |MB_axi_uartlite_0_0       |         1|
+|5     |MB_clk_wiz_0_0            |         1|
+|6     |MB_hello_world_writer_0_4 |         1|
+|7     |MB_mdm_1_5                |         1|
+|8     |MB_microblaze_0_5         |         1|
+|9     |MB_rst_clk_wiz_0_100M_0   |         1|
+|10    |MB_dlmb_bram_if_cntlr_7   |         1|
+|11    |MB_dlmb_v10_7             |         1|
+|12    |MB_ilmb_bram_if_cntlr_7   |         1|
+|13    |MB_ilmb_v10_7             |         1|
+|14    |MB_lmb_bram_7             |         1|
++------+--------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |MB_axi_bram_ctrl_0      |     1|
+|2     |MB_axi_bram_ctrl_0_bram |     1|
+|3     |MB_axi_smc              |     1|
+|4     |MB_axi_uartlite_0       |     1|
+|5     |MB_clk_wiz_0            |     1|
+|6     |MB_dlmb_bram_if_cntlr   |     1|
+|7     |MB_dlmb_v10             |     1|
+|8     |MB_hello_world_writer_0 |     1|
+|9     |MB_ilmb_bram_if_cntlr   |     1|
+|10    |MB_ilmb_v10             |     1|
+|11    |MB_lmb_bram             |     1|
+|12    |MB_mdm_1                |     1|
+|13    |MB_microblaze_0         |     1|
+|14    |MB_rst_clk_wiz_0_100M   |     1|
+|15    |IBUF                    |     2|
+|16    |OBUF                    |     1|
++------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.020 ; gain = 589.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1591.020 ; gain = 566.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1591.020 ; gain = 589.602
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1591.020 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1591.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6275561
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1591.020 ; gain = 990.398
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1591.020 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/gavwa/Desktop/Workin_Dir/Hardware/MicroBlaze/MicroBlaze.runs/synth_1/MB_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file MB_wrapper_utilization_synth.rpt -pb MB_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 31 15:04:40 2024...

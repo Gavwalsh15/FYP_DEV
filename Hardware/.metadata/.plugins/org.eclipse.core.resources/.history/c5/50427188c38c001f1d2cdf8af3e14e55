@@ -1,0 +1,29 @@
+#include "xuartps.h" // Include UART PS header
+
+XUartPs Uart_Ps; // Declare a UART instance
+
+// Initialize the UART
+void init_uart() {
+    XUartPs_Config *Config = XUartPs_LookupConfig(XPAR_XUARTPS_0_DEVICE_ID);
+    XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+}
+
+char read_uart_char() {
+    char ch;
+    // Wait for a character to be received
+    while (XUartPs_Recv(&Uart_Ps, &ch, 1) != 1);
+    return ch;
+}
+
+int main() {
+    init_platform();
+    init_uart(); // Initialize UART
+
+    while (1) {
+        char received_char = read_uart_char(); // Read character from UART
+        xil_printf("Received: %c\n", received_char); // Print the received character
+    }
+
+    cleanup_platform();
+    return 0;
+}

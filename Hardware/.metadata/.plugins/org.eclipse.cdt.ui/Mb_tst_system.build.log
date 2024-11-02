@@ -1,0 +1,6 @@
+18:50:54 **** Incremental Build of configuration Emulation-SW for project Mb_tst_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+18:50:54 Build Finished (took 131ms)
+

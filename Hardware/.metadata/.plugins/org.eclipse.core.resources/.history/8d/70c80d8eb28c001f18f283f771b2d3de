@@ -1,0 +1,29 @@
+#include "xuartlite.h"
+#include "xparameters.h"
+
+#define UART_DEVICE_ID XPAR_UARTLITE_0_DEVICE_ID
+#define BUFFER_SIZE 100
+
+XUartLite UartLite;  // UART Lite instance
+u8 Buffer[BUFFER_SIZE]; // Buffer to store received data
+
+int main() {
+    int Status;
+
+    // Initialize the UART Lite driver
+    Status = XUartLite_Initialize(&UartLite, UART_DEVICE_ID);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    while (1) {
+        // Read data from UART
+        int ReceivedCount = XUartLite_Recv(&UartLite, Buffer, BUFFER_SIZE);
+        for (int i = 0; i < ReceivedCount; i++) {
+            // Process received data (for example, echo it back)
+            XUartLite_Send(&UartLite, &Buffer[i], 1);
+        }
+    }
+
+    return 0;
+}
